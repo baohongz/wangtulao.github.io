@@ -42,7 +42,7 @@ textarea {
 		<img src="img/Rlogo.svg" alt="RStudio" width="120" height="" >
 		<img src="img/Vimlogo.svg" alt="Vim" width="120" height="" >
 		<script>
-$('textarea[name="x"]').val('Start typing here...\n\n```{r test, fig.width=6, fig.height=6}\nlibrary(plyr)\nlibrary(tidyverse)\noptions(tibble.width = Inf)\ntheme_set(theme_bw())\nplot(1:10)\n```\n\nThe value of pi is `r pi`.');
+$('textarea[name="x"]').val('Start typing here...\n\n```{r test, fig.width=6, fig.height=6, message=FALSE}\nlibrary(plyr)\nlibrary(dplyr)\nlibrary(ggplot2)\noptions(tibble.width = Inf)\ntheme_set(theme_bw())\nplot(1:10)\n```\n\nThe value of pi is `r pi`.');
 
 $('#knit').click(function() {
 	$(this).attr('class', 'btn disabled');
